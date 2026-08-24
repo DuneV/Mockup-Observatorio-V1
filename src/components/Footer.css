@@ -1,0 +1,67 @@
+.site-footer {
+  background: var(--surface-muted);
+  color: var(--muted);
+  padding-top: 52px;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer__row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 32px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+
+.site-footer__logo {
+  height: 32px;
+  width: auto;
+}
+
+.site-footer__faculty {
+  margin-top: 12px;
+  font-size: 13.5px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.site-footer__meta p {
+  font-size: 13.5px;
+  line-height: 1.7;
+}
+
+.site-footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.site-footer__social a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+.site-footer__social a:hover {
+  color: var(--ink);
+}
+
+.site-footer__legal {
+  padding-block: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+}
+
+.site-footer__legal p {
+  font-size: 11.5px;
+  color: var(--muted);
+  opacity: 0.85;
+}
+
+@media (max-width: 720px) {
+  .site-footer__row {
+    grid-template-columns: 1fr;
+  }
+}

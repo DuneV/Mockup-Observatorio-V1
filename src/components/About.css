@@ -1,0 +1,28 @@
+.about {
+  border-bottom: 1px solid var(--line);
+}
+
+.about__row {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: clamp(24px, 5vw, 64px);
+}
+
+.about__content h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  max-width: 18ch;
+}
+
+.about__content p {
+  margin-top: 22px;
+  max-width: 62ch;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 720px) {
+  .about__row {
+    grid-template-columns: 1fr;
+  }
+}

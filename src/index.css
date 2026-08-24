@@ -1,0 +1,203 @@
+/* ===========================================================
+   DESIGN TOKENS
+   Observatorio de Salud Pública — Facultad de Medicina, Uniandes
+
+   Concept: a "semáforo epidemiológico" — the traffic-light logic
+   used across the Observatorio's own indicators (semaforización de
+   coberturas de vacunación) becomes the page's structural signature:
+   a three-tone status marker (verde / ámbar / rojo) reused as a
+   navigation cue, a section marker and a data motif — instead of
+   a decorative accent color.
+   =========================================================== */
+
+:root {
+  /* --- Color: institutional but not corporate-generic --- */
+  --ink: #12232a;           /* near-black teal-navy, for text & dark sections */
+  --ink-soft: #2a3d44;
+  --paper: #f6f3ec;         /* warm clinical paper, not pure white */
+  --paper-raised: #ffffff;
+  --surface-muted: #f0ede2; /* soft light-gray surface, e.g. footer */
+  --line: #dcd6c7;          /* hairline rule on paper */
+
+  --teal: #1f6f6b;          /* primary brand teal */
+  --teal-deep: #123f3d;
+  --teal-tint: #e4efec;
+
+  --status-green: #3f8f5c;
+  --status-amber: #d7a233;
+  --status-red: #c1452e;
+
+  --muted: #5c6b66;
+
+  /* --- Type: one family throughout, no serif/mono mix --- */
+  --font-display: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* --- Layout --- */
+  --content-width: 1180px;
+  --gutter: clamp(20px, 5vw, 64px);
+  --radius: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.12;
+  margin: 0;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+.container {
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--teal);
+  display: inline-flex;
+  align-items: center;
+}
+
+/* --- Semáforo motif: functional status marker (coverage lists, KPIs) --- */
+.semaforo {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.semaforo span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.semaforo .dot-green { background: var(--status-green); }
+.semaforo .dot-amber { background: var(--status-amber); }
+.semaforo .dot-red { background: var(--status-red); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--paper);
+}
+
+.btn-primary:hover {
+  background: var(--teal-deep);
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.btn-ghost:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  border-color: var(--teal);
+  color: var(--teal);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--teal);
+  color: var(--paper);
+}
+
+section {
+  padding-block: clamp(56px, 8vw, 108px);
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 720px;
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.section-head h2 {
+  font-size: clamp(28px, 3.4vw, 42px);
+}

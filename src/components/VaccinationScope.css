@@ -1,0 +1,98 @@
+.scope {
+  background: var(--paper);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.scope__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: start;
+}
+
+.scope__title {
+  margin-top: 18px;
+  color: var(--ink);
+  font-size: clamp(26px, 3vw, 36px);
+  max-width: 22ch;
+}
+
+.scope__list {
+  margin-top: 32px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.scope__list li {
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.scope__list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.scope__docs {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  padding: 26px;
+  position: sticky;
+  top: 100px;
+}
+
+.scope__docs-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+
+.scope__docs ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.scope__docs a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 14px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  transition: color 0.15s ease;
+}
+
+.scope__docs li:last-child a {
+  border-bottom: 1px solid var(--line);
+}
+
+.scope__docs a:hover {
+  color: var(--ink);
+}
+
+.scope__docs a span {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .scope__grid {
+    grid-template-columns: 1fr;
+  }
+  .scope__docs {
+    position: static;
+  }
+}

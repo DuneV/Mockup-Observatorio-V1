@@ -1,0 +1,32 @@
+.objectives__list {
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.objectives__list li {
+  display: grid;
+  grid-template-columns: 84px 1fr;
+  gap: 24px;
+  padding-block: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.objectives__index {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--teal);
+  padding-top: 3px;
+}
+
+.objectives__list p {
+  font-size: clamp(17px, 1.8vw, 20px);
+  line-height: 1.6;
+  max-width: 68ch;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 620px) {
+  .objectives__list li {
+    grid-template-columns: 40px 1fr;
+  }
+}

@@ -1,0 +1,109 @@
+.dashboard {
+  background: var(--teal-tint);
+  border-bottom: 1px solid var(--line);
+}
+
+.dashboard__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.dashboard__intro {
+  margin-top: 4px;
+  font-size: 15px;
+  color: var(--ink-soft);
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+.dashboard__badge {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+  border: 1px solid var(--teal);
+  padding: 6px 12px;
+  white-space: nowrap;
+}
+
+.dashboard__controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.dashboard__filter {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.dashboard__filter-label {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.dashboard__grid--panel {
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 24px;
+}
+
+/* --- Jumbotron: prominent showcase panel for the active tab --- */
+.dashboard__jumbotron {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  padding: clamp(24px, 4vw, 40px);
+}
+
+.dashboard__jumbotron-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.dashboard__jumbotron-title {
+  margin-top: 10px;
+  font-size: clamp(22px, 2.6vw, 30px);
+}
+
+.dashboard__jumbotron-desc {
+  margin-top: 10px;
+  max-width: 68ch;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+@media (max-width: 900px) {
+  .dashboard__head {
+    flex-direction: column;
+  }
+  .dashboard__controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dashboard__grid {
+    grid-template-columns: 1fr;
+  }
+}
