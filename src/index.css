@@ -11,23 +11,23 @@
    =========================================================== */
 
 :root {
-  /* --- Color: institutional but not corporate-generic --- */
-  --ink: #12232a;           /* near-black teal-navy, for text & dark sections */
-  --ink-soft: #2a3d44;
-  --paper: #f6f3ec;         /* warm clinical paper, not pure white */
+  /* --- Color: Observatorio brand palette --- */
+  --ink: #033148;           /* brand navy, for text & dark sections */
+  --ink-soft: #0d4863;
+  --paper: #ffffff;         /* white, predominant surface */
   --paper-raised: #ffffff;
-  --surface-muted: #f0ede2; /* soft light-gray surface, e.g. footer */
-  --line: #dcd6c7;          /* hairline rule on paper */
+  --surface-muted: #eef6fa; /* soft blue-tinted surface, e.g. footer */
+  --line: #d7e6ee;          /* hairline rule on paper */
 
-  --teal: #1f6f6b;          /* primary brand teal */
-  --teal-deep: #123f3d;
-  --teal-tint: #e4efec;
+  --teal: #2596be;          /* primary brand blue */
+  --teal-deep: #033148;
+  --teal-tint: #e3f2f8;
 
   --status-green: #3f8f5c;
-  --status-amber: #d7a233;
+  --status-amber: #ffb803;
   --status-red: #c1452e;
 
-  --muted: #5c6b66;
+  --muted: #4d6472;
 
   /* --- Type: one family throughout, no serif/mono mix --- */
   --font-display: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -46,6 +46,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 @media (prefers-reduced-motion: reduce) {

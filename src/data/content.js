@@ -5,6 +5,7 @@
 export const nav = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Qué es', href: '#que-es' },
+  { label: 'Equipo', href: '#equipo' },
   { label: 'Visor', href: '#visor' },
   { label: 'Objetivos', href: '#objetivos' },
   { label: 'Boletines', href: '#boletines' },
@@ -111,10 +112,23 @@ export const memorias = {
   },
 }
 
+export const team = {
+  eyebrow: 'Equipo',
+  title: 'Quiénes hacen el Observatorio',
+  members: [
+    { name: 'Luis Jorge Hernández', role: 'Director', image: 'DrLuisJorge.jpeg', focus: '50% 20%', zoom: 1.5, bio: 'Biografía pendiente.' },
+    { name: 'Daniela Rodríguez', role: 'Cargo 1', image: 'DanielaRodriguez.jpeg', focus: '50% 45%', zoom: 1, bio: 'Biografía pendiente.' },
+    { name: 'Laura Baracaldo', role: 'Cargo 2', image: 'LauraBaracaldo.jpeg', focus: '50% 40%', zoom: 1, bio: 'Biografía pendiente.' },
+    { name: 'Mauricio', role: 'Cargo 3', image: 'Mauricio.jpeg', focus: '50% 12%', zoom: 1.8, bio: 'Biografía pendiente.' },
+    { name: 'Valentina', role: 'Cargo 4', image: 'valentina.jpeg', focus: '50% 30%', zoom: 1, bio: 'Biografía pendiente.' },
+    { name: 'Rodrigo', role: 'Cargo 5', image: 'rodrigo.png', focus: '50% 30%', zoom: 1, bio: 'Biografía pendiente.' },
+  ],
+}
+
 export const contact = {
   eyebrow: 'Contacto',
   title: 'Hablemos de indicadores y política pública',
-  coordinator: 'Luis Jorge Hernández — Coordinador',
+  coordinator: 'Luis Jorge Hernández — Director',
   email: 'observatoriosp@uniandes.edu.co',
   twitter: { handle: '@analizarsalud', href: 'https://twitter.com/analizarsalud' },
   links: [

@@ -1,3 +1,36 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Flat, solid-fill geometric shapes — no gradients or blur */
+.contact__shape {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.contact__shape--circle {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: var(--teal-tint);
+  bottom: -120px;
+  right: -80px;
+}
+
+.contact__shape--triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 70px solid var(--status-amber);
+  opacity: 0.14;
+  top: 30px;
+  left: 4%;
+  transform: rotate(12deg);
+}
+
 .contact__row {
   display: grid;
   grid-template-columns: 1fr;

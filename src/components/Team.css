@@ -1,0 +1,238 @@
+.team {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Flat, solid-fill geometric shapes — no gradients or blur */
+.team__shape {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.team__shape--circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--teal-tint);
+  top: -90px;
+  left: -70px;
+}
+
+.team__shape--triangle {
+  width: 0;
+  height: 0;
+  border-left: 36px solid transparent;
+  border-right: 36px solid transparent;
+  border-bottom: 62px solid var(--status-green);
+  opacity: 0.14;
+  bottom: 24px;
+  right: 3%;
+  transform: rotate(-10deg);
+}
+
+.team__row {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: clamp(24px, 5vw, 64px);
+}
+
+.team__content h2 {
+  font-size: clamp(26px, 3vw, 36px);
+  max-width: 18ch;
+}
+
+.team__grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.team__card {
+  display: block;
+  width: 100%;
+  background: var(--paper-raised);
+  border: none;
+  padding: 26px;
+  font: inherit;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.team__card:hover {
+  background: var(--teal-tint);
+}
+
+.team__photo-frame {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  transition: border-color 0.2s ease;
+}
+
+.team__card:hover .team__photo-frame {
+  border-color: var(--teal);
+}
+
+.team__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.team__card:hover .team__photo {
+  transform: scale(1.05);
+}
+
+.team__photo-cue {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 8px 10px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: linear-gradient(to top, rgba(18, 35, 42, 0.78), transparent);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.team__card:hover .team__photo-cue {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team__name {
+  margin-top: 16px;
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.team__role {
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .team__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.team-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gutter);
+  background: rgba(18, 35, 42, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.team-modal__box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  max-width: 620px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  padding: 40px;
+}
+
+.team-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.team-modal__close:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+.team-modal__photo-frame {
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.team-modal__photo {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.team-modal__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.team-modal__role {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal-deep);
+}
+
+.team-modal__bio {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 560px) {
+  .team-modal__box {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+
+  .team-modal__photo-frame {
+    max-width: 160px;
+  }
+}

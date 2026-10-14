@@ -37,9 +37,8 @@ export default function Dashboard() {
             <span className="eyebrow">{viewer.eyebrow}</span>
             <h2>{viewer.title}</h2>
             <p className="dashboard__intro">
-              Indicadores construidos con componentes de React (Recharts) en vez del
-              visor embebido de Power BI. Elige un biológico para filtrar los
-              gráficos y navega por pestañas según el tema que quieras explorar.
+              Elige un biológico para filtrar los gráficos y navega por pestañas
+              según el tema que quieras explorar.
             </p>
           </div>
           <span className="dashboard__badge">Datos ilustrativos</span>

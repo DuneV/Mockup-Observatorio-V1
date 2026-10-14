@@ -4,6 +4,9 @@ import './Contact.css'
 export default function Contact() {
   return (
     <section id="contacto" className="contact">
+      <span className="contact__shape contact__shape--circle" aria-hidden="true" />
+      <span className="contact__shape contact__shape--triangle" aria-hidden="true" />
+
       <div className="container contact__row">
         <div className="contact__intro">
           <span className="eyebrow">{contact.eyebrow}</span>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { nav } from '../data/content'
 import { useRole } from '../context/RoleContext'
+import obsLogo from '../assets/logo_.png'
 import './Header.css'
 
 export default function Header() {
@@ -26,9 +27,11 @@ export default function Header() {
             height="40"
           />
           <span className="site-header__divider" aria-hidden="true" />
-          <span className="site-header__brand-text">
-            Observatorio<em>Salud Pública</em>
-          </span>
+          <img
+            className="site-header__obs-logo"
+            src={obsLogo}
+            alt="Observatorio de Salud Pública y Epidemiología"
+          />
         </a>
 
         <nav className="site-header__nav" aria-label="Navegación principal">

@@ -1,22 +1,23 @@
 import { hero } from '../data/content'
+import heroBanner from '../assets/banner.jpg'
 import './Hero.css'
 
 export default function Hero() {
   return (
     <section id="inicio" className="hero">
-      <span className="hero__shape hero__shape--circle" aria-hidden="true" />
-      <span className="hero__shape hero__shape--triangle" aria-hidden="true" />
+      <img className="hero__bg" src={heroBanner} alt="" aria-hidden="true" />
+      <span className="hero__overlay" aria-hidden="true" />
 
       <div className="container hero__row">
         <div className="hero__copy">
-          <span className="eyebrow">{hero.eyebrow}</span>
+          <span className="eyebrow eyebrow--on-dark">{hero.eyebrow}</span>
           <h1 className="hero__title">{hero.title}</h1>
           <p className="hero__lead">{hero.lead}</p>
           <div className="hero__actions">
             <a className="btn btn-primary" href={hero.ctaPrimary.href}>
               {hero.ctaPrimary.label}
             </a>
-            <a className="btn btn-ghost" href={hero.ctaSecondary.href}>
+            <a className="btn btn-ghost btn-ghost--on-dark" href={hero.ctaSecondary.href}>
               {hero.ctaSecondary.label}
             </a>
           </div>

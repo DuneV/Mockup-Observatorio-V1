@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useRole } from '../context/RoleContext'
+import obsLogo from '../assets/logo_.png'
 import './RoleGate.css'
 
 export default function RoleGate() {
@@ -25,36 +26,26 @@ export default function RoleGate() {
         <img
           className="role-gate__logo"
           src="/uniandes-medicina.png"
-          alt="Universidad de los Andes — Facultad de Medicina"
+          alt="Universidad de los Andes, Facultad de Medicina"
           width="184"
           height="40"
         />
-        <h1 className="role-gate__title">Observatorio de Salud Pública</h1>
-        <p className="role-gate__lead">
-          Elige cómo quieres entrar. El contenido del visor es el mismo para
-          ambos roles — la diferencia es que, como <strong>administrador</strong>,
-          puedes actualizar los datos del dashboard subiendo un archivo Excel,
-          en vez de depender de que alguien edite el código.
-        </p>
+        <h1 className="role-gate__title">
+          <img
+            className="role-gate__obs-logo"
+            src={obsLogo}
+            alt="Observatorio de Salud Pública y Epidemiología"
+          />
+        </h1>
 
         <div className="role-gate__cards">
           <button className="role-card" onClick={chooseGuest}>
-            <span className="role-card__eyebrow">Ver el visor</span>
             <span className="role-card__title">Invitado</span>
-            <span className="role-card__desc">
-              Explora todos los indicadores, filtra por biológico y consulta
-              boletines y publicaciones. Solo lectura.
-            </span>
             <span className="role-card__cta">Entrar como invitado →</span>
           </button>
 
           <div className="role-card role-card--admin">
-            <span className="role-card__eyebrow">Actualizar datos</span>
             <span className="role-card__title">Administrador</span>
-            <span className="role-card__desc">
-              Todo lo del invitado, más un panel para subir un Excel y
-              refrescar coberturas, metas y proyecciones sin tocar código.
-            </span>
 
             {!showPasscode ? (
               <button
@@ -86,12 +77,6 @@ export default function RoleGate() {
             )}
           </div>
         </div>
-
-        <p className="role-gate__footnote">
-          Este código es solo una barrera de demostración en el navegador,
-          no un inicio de sesión real — no lo uses para proteger datos
-          sensibles en producción.
-        </p>
       </div>
     </div>
   )

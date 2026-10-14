@@ -1,4 +1,5 @@
 import { footer } from '../data/content'
+import obsLogo from '../assets/logo_.png'
 import './Footer.css'
 
 export default function Footer() {
@@ -13,7 +14,11 @@ export default function Footer() {
             width="184"
             height="40"
           />
-          <p className="site-footer__faculty">Observatorio de Salud Pública</p>
+          <img
+            className="site-footer__obs-logo"
+            src={obsLogo}
+            alt="Observatorio de Salud Pública y Epidemiología"
+          />
         </div>
 
         <div className="site-footer__meta">

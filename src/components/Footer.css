@@ -18,11 +18,10 @@
   width: auto;
 }
 
-.site-footer__faculty {
-  margin-top: 12px;
-  font-size: 13.5px;
-  color: var(--ink);
-  font-weight: 600;
+.site-footer__obs-logo {
+  margin-top: 14px;
+  height: 30px;
+  width: auto;
 }
 
 .site-footer__meta p {
