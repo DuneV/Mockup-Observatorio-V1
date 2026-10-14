@@ -21,7 +21,7 @@ export default function Header() {
         <a className="site-header__brand" href="#inicio">
           <img
             className="site-header__logo"
-            src="/uniandes-medicina.png"
+            src={`${import.meta.env.BASE_URL}uniandes-medicina.png`}
             alt="Universidad de los Andes — Facultad de Medicina"
             width="184"
             height="40"

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="site-footer__brand">
           <img
             className="site-footer__logo"
-            src="/uniandes-medicina.png"
+            src={`${import.meta.env.BASE_URL}uniandes-medicina.png`}
             alt="Universidad de los Andes — Facultad de Medicina"
             width="184"
             height="40"
