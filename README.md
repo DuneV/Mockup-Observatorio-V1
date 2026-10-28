@@ -1,6 +1,6 @@
 # Observatorio de Salud Pública — Uniandes
 
-Sitio en React (Vite) del Observatorio de Salud Pública y Epidemiología de la
+Sitio en React (Vite) del Observatorio de Salud Pública y Epidemiología Dr. José Félix Patiño de la
 Facultad de Medicina y Ciencias de la Salud, Universidad de los Andes. Está pensado para ir embebido,
 por eso no tiene menú de navegación ni roles de usuario.
 

@@ -17,7 +17,7 @@ export default function Footer() {
           <img
             className="site-footer__obs-logo"
             src={obsLogo}
-            alt="Observatorio de Salud Pública y Epidemiología"
+            alt="Observatorio de Salud Pública y Epidemiología Dr. José Félix Patiño"
           />
         </div>
 
