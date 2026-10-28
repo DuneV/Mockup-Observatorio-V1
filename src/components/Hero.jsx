@@ -30,15 +30,15 @@ export default function Hero() {
           <ul className="hero__panel-list">
             <li>
               <span className="dot dot-green" />
-              Influenza — meta cumplida
+              Influenza: meta cumplida
             </li>
             <li>
               <span className="dot dot-amber" />
-              Frontera — en seguimiento
+              Frontera: en seguimiento
             </li>
             <li>
               <span className="dot dot-red" />
-              Virus respiratorios — alerta
+              Virus respiratorios: alerta
             </li>
           </ul>
           <div className="hero__panel-foot">

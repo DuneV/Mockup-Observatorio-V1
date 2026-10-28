@@ -1,9 +1,9 @@
 // Contenido del Observatorio de Salud Pública y Epidemiología
-// Facultad de Medicina, Universidad de los Andes.
+// Facultad de Medicina y Ciencias de la Salud, Universidad de los Andes.
 // Centralizado aquí para mantener los componentes de presentación limpios.
 
 export const hero = {
-  eyebrow: 'Facultad de Medicina · Universidad de los Andes',
+  eyebrow: 'Facultad de Medicina y Ciencias de la Salud · Universidad de los Andes',
   title: 'Observatorio de Salud Pública y Epidemiología',
   lead: 'Un espacio físico y virtual de seguimiento, monitoreo y evaluación de los principales procesos e indicadores de salud de Colombia y la región, para aportar desde la academia y la sociedad civil al control social y la gobernanza ciudadana en la toma de decisiones de política pública en salud.',
   ctaPrimary: { label: 'Ver visor de indicadores', href: '#visor' },
@@ -99,16 +99,16 @@ export const team = {
     {
       name: 'Luis Jorge Hernández Flórez',
       role: 'Director',
-      position: 'Profesor asociado de la Facultad de Medicina de la Universidad de los Andes y Director del Observatorio de Salud Pública y Epidemiología José Félix Patiño.',
+      position: 'Profesor asociado de la Facultad de Medicina y Ciencias de la Salud de la Universidad de los Andes y Director del Observatorio de Salud Pública y Epidemiología José Félix Patiño.',
       education: 'Médico cirujano de la Pontificia Universidad Javeriana, especialista en Administración en Salud, Análisis de Datos y Epidemiología. Magíster y doctor (PhD) en Salud Pública de la Universidad Nacional de Colombia.',
       areas: 'Salud pública, epidemiología, salud ambiental, inmunizaciones, vigilancia epidemiológica, determinantes sociales y ambientales de la salud, gobernanza de la calidad del aire, políticas públicas, modelos de atención y evaluación de programas e indicadores de salud.',
-      bio: 'Médico, magíster y doctor en Salud Pública, profesor asociado de la Facultad de Medicina de la Universidad de los Andes y coordinador del Observatorio de Salud Pública y Epidemiología José Félix Patiño. Cuenta con una amplia trayectoria en investigación, docencia y gestión de programas de salud pública. Ha desempeñado cargos técnicos y de coordinación en la Secretaría Distrital de Salud de Bogotá y ha sido consultor de la Organización Panamericana de la Salud (OPS). Su experiencia comprende epidemiología, salud ambiental, inmunizaciones, vigilancia en salud pública y evaluación de políticas y programas sanitarios. Ha liderado investigaciones sobre determinantes sociales y ambientales de la salud, calidad del aire y fortalecimiento de los programas de vacunación, promoviendo la generación de evidencia científica para la toma de decisiones en salud pública.',
+      bio: 'Médico, magíster y doctor en Salud Pública, profesor asociado de la Facultad de Medicina y Ciencias de la Salud de la Universidad de los Andes y coordinador del Observatorio de Salud Pública y Epidemiología José Félix Patiño. Cuenta con una amplia trayectoria en investigación, docencia y gestión de programas de salud pública. Ha desempeñado cargos técnicos y de coordinación en la Secretaría Distrital de Salud de Bogotá y ha sido consultor de la Organización Panamericana de la Salud (OPS). Su experiencia comprende epidemiología, salud ambiental, inmunizaciones, vigilancia en salud pública y evaluación de políticas y programas sanitarios. Ha liderado investigaciones sobre determinantes sociales y ambientales de la salud, calidad del aire y fortalecimiento de los programas de vacunación, promoviendo la generación de evidencia científica para la toma de decisiones en salud pública.',
       image: 'DrLuisJorge.jpeg', focus: '50% 20%', zoom: 1.5,
     },
     {
       name: 'Daniela Rodríguez Sánchez',
       role: 'Coordinadora de proyectos de investigación',
-      position: 'Coordinadora de Proyectos de Investigación del Observatorio de Salud Pública y Epidemiología José Félix Patiño y profesora de cátedra de la Facultad de Medicina de la Universidad de los Andes.',
+      position: 'Coordinadora de Proyectos de Investigación del Observatorio de Salud Pública y Epidemiología José Félix Patiño y profesora de cátedra de la Facultad de Medicina y Ciencias de la Salud de la Universidad de los Andes.',
       education: 'Médica de la Universidad de los Andes, magíster en Salud Pública.',
       areas: 'Salud pública, epidemiología, inmunización, salud ambiental, salud mental, salud materno-perinatal, investigación en salud, análisis de políticas públicas y evaluación de intervenciones en salud.',
       bio: 'Médica y magíster en Salud Pública, con experiencia en coordinación y desarrollo de proyectos de investigación en salud pública, epidemiología y evaluación de intervenciones en salud. Actualmente se desempeña como coordinadora de proyectos de investigación del Observatorio de Salud Pública y Epidemiología José Félix Patiño de la Universidad de los Andes y como docente universitaria. Su trayectoria incluye investigaciones en inmunización, salud materno-perinatal, salud ambiental y análisis de políticas públicas, con énfasis en la generación de evidencia científica para orientar la toma de decisiones, el fortalecimiento de los sistemas de salud y la reducción de inequidades en salud.',
@@ -185,7 +185,7 @@ export const contact = {
 
 export const footer = {
   institution: 'Universidad de los Andes',
-  faculty: 'Facultad de Medicina',
+  faculty: 'Facultad de Medicina y Ciencias de la Salud',
   address: 'Carrera 1 No 18A – 10, Bloque Q, Piso 8, Bogotá, Colombia',
   phone: 'Teléfono (601) 332 4282',
   legal: [
