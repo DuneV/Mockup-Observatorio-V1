@@ -12,27 +12,27 @@
 
 :root {
   /* --- Color: Observatorio brand palette --- */
-  --ink: #033148;           /* brand navy, for text & dark sections */
-  --ink-soft: #0d4863;
+  --ink: #1c2541;           /* Manual FMCS: color de texto */
+  --ink-soft: #3a4566;
   --paper: #ffffff;         /* white, predominant surface */
   --paper-raised: #ffffff;
-  --surface-muted: #eef6fa; /* soft blue-tinted surface, e.g. footer */
-  --line: #d7e6ee;          /* hairline rule on paper */
+  --surface-muted: #f0f5fc; /* soft blue-tinted surface, e.g. footer */
+  --line: #d9e3f2;          /* hairline rule on paper */
 
-  --teal: #2596be;          /* primary brand blue */
-  --teal-deep: #033148;
-  --teal-tint: #e3f2f8;
+  --teal: #557dc4;          /* Manual FMCS: Azul acento */
+  --teal-deep: #1c2541;
+  --teal-tint: #e6eefb;  /* tint of Azul claro #89b8ef */
 
   --status-green: #3f8f5c;
-  --status-amber: #ffb803;
+  --status-amber: #ffb86f;
   --status-red: #c1452e;
 
-  --muted: #4d6472;
+  --muted: #55607f;
 
   /* --- Type: one family throughout, no serif/mono mix --- */
-  --font-display: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Source Sans 3', Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Source Sans 3', Arial, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Source Sans 3', Arial, -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* --- Layout --- */
   --content-width: 1180px;

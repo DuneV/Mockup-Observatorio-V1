@@ -11,10 +11,12 @@ export default function Objectives() {
         </div>
 
         <ol className="objectives__list">
-          {objectives.items.map((text, i) => (
-            <li key={text}>
+          {objectives.items.map(({ title, text }, i) => (
+            <li key={title}>
               <span className="objectives__index">{String(i + 1).padStart(2, '0')}</span>
-              <p>{text}</p>
+              <p>
+                <strong>{title}</strong> {text}
+              </p>
             </li>
           ))}
         </ol>

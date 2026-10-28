@@ -9,9 +9,17 @@ export default function VaccinationScope() {
           <span className="eyebrow">{vaccinationScope.eyebrow}</span>
           <h2 className="scope__title">{vaccinationScope.title}</h2>
 
+          {vaccinationScope.intro.map((paragraph) => (
+            <p className="scope__intro" key={paragraph}>
+              {paragraph}
+            </p>
+          ))}
+
           <ul className="scope__list">
-            {vaccinationScope.items.map((text) => (
-              <li key={text}>{text}</li>
+            {vaccinationScope.items.map(({ title, text }) => (
+              <li key={title}>
+                <strong>{title}</strong> {text}
+              </li>
             ))}
           </ul>
         </div>

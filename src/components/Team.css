@@ -157,7 +157,7 @@
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 32px;
-  max-width: 620px;
+  max-width: 760px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
@@ -235,4 +235,34 @@
   .team-modal__photo-frame {
     max-width: 160px;
   }
+}
+
+.team__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  background: var(--teal-tint);
+  color: var(--teal-deep);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+}
+
+.team-modal__label {
+  margin-top: 18px;
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.team-modal__text {
+  margin-top: 6px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
 }

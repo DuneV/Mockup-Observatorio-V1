@@ -5,7 +5,28 @@ import './Team.css'
 const images = import.meta.glob('../assets/*.{jpeg,jpg,png}', { eager: true, import: 'default' })
 
 function resolveImage(filename) {
-  return images[`../assets/${filename}`]
+  return filename ? images[`../assets/${filename}`] : undefined
+}
+
+function initials(name) {
+  return name
+    .split(' ')
+    .filter((w) => w.length > 2)
+    .slice(0, 2)
+    .map((w) => w[0])
+    .join('')
+}
+
+function Photo({ member, className }) {
+  const src = resolveImage(member.image)
+  if (!src) {
+    return (
+      <div className={`${className} team__placeholder`} role="img" aria-label={member.name}>
+        {initials(member.name)}
+      </div>
+    )
+  }
+  return <img className={className} src={src} alt={member.name} style={photoStyle(member)} />
 }
 
 function photoStyle(member) {
@@ -49,12 +70,7 @@ export default function Team() {
                 onClick={() => setActiveMember(member)}
               >
                 <div className="team__photo-frame">
-                  <img
-                    className="team__photo"
-                    src={resolveImage(member.image)}
-                    alt={member.name}
-                    style={photoStyle(member)}
-                  />
+                  <Photo member={member} className="team__photo" />
                   <span className="team__photo-cue">Ver perfil</span>
                 </div>
                 <p className="team__name">{member.name}</p>
@@ -83,16 +99,23 @@ export default function Team() {
               ✕
             </button>
             <div className="team-modal__photo-frame">
-              <img
-                className="team-modal__photo"
-                src={resolveImage(activeMember.image)}
-                alt={activeMember.name}
-                style={photoStyle(activeMember)}
-              />
+              <Photo member={activeMember} className="team-modal__photo" />
             </div>
             <div className="team-modal__body">
               <p className="team-modal__name">{activeMember.name}</p>
-              <p className="team-modal__role">{activeMember.role}</p>
+              <p className="team-modal__role">{activeMember.position ?? activeMember.role}</p>
+              {activeMember.education && (
+                <>
+                  <h4 className="team-modal__label">Formación</h4>
+                  <p className="team-modal__text">{activeMember.education}</p>
+                </>
+              )}
+              {activeMember.areas && (
+                <>
+                  <h4 className="team-modal__label">Áreas de trabajo</h4>
+                  <p className="team-modal__text">{activeMember.areas}</p>
+                </>
+              )}
               <p className="team-modal__bio">{activeMember.bio}</p>
             </div>
           </div>

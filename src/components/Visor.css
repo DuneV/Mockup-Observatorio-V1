@@ -1,0 +1,19 @@
+.visor {
+  background: var(--teal-tint);
+  border-bottom: 1px solid var(--line);
+}
+
+.visor__frame {
+  width: 100%;
+  aspect-ratio: 600 / 373.5;
+  min-height: 360px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+
+.visor__frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
