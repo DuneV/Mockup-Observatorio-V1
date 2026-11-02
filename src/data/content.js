@@ -103,7 +103,7 @@ export const team = {
       education: 'Médico cirujano de la Pontificia Universidad Javeriana, especialista en Administración en Salud, Análisis de Datos y Epidemiología. Magíster y doctor (PhD) en Salud Pública de la Universidad Nacional de Colombia.',
       areas: 'Salud pública, epidemiología, salud ambiental, inmunizaciones, vigilancia epidemiológica, determinantes sociales y ambientales de la salud, gobernanza de la calidad del aire, políticas públicas, modelos de atención y evaluación de programas e indicadores de salud.',
       bio: 'Médico, magíster y doctor en Salud Pública, profesor asociado de la Facultad de Medicina y Ciencias de la Salud de la Universidad de los Andes y coordinador del Observatorio de Salud Pública y Epidemiología Dr. José Félix Patiño. Cuenta con una amplia trayectoria en investigación, docencia y gestión de programas de salud pública. Ha desempeñado cargos técnicos y de coordinación en la Secretaría Distrital de Salud de Bogotá y ha sido consultor de la Organización Panamericana de la Salud (OPS). Su experiencia comprende epidemiología, salud ambiental, inmunizaciones, vigilancia en salud pública y evaluación de políticas y programas sanitarios. Ha liderado investigaciones sobre determinantes sociales y ambientales de la salud, calidad del aire y fortalecimiento de los programas de vacunación, promoviendo la generación de evidencia científica para la toma de decisiones en salud pública.',
-      image: 'DrLuisJorge.jpeg', focus: '50% 20%', zoom: 1.5,
+      image: 'DrLuisJorge.jpeg', focus: '50% 20%', zoom: 1,
     },
     {
       name: 'Daniela Rodríguez Sánchez',
@@ -112,9 +112,17 @@ export const team = {
       education: 'Médica de la Universidad de los Andes, magíster en Salud Pública.',
       areas: 'Salud pública, epidemiología, inmunización, salud ambiental, salud mental, salud materno-perinatal, investigación en salud, análisis de políticas públicas y evaluación de intervenciones en salud.',
       bio: 'Médica y magíster en Salud Pública, con experiencia en coordinación y desarrollo de proyectos de investigación en salud pública, epidemiología y evaluación de intervenciones en salud. Actualmente se desempeña como coordinadora de proyectos de investigación del Observatorio de Salud Pública y Epidemiología Dr. José Félix Patiño de la Universidad de los Andes y como docente universitaria. Su trayectoria incluye investigaciones en inmunización, salud materno-perinatal, salud ambiental y análisis de políticas públicas, con énfasis en la generación de evidencia científica para orientar la toma de decisiones, el fortalecimiento de los sistemas de salud y la reducción de inequidades en salud.',
-      image: 'DanielaRodriguez.jpeg', focus: '50% 45%', zoom: 1,
+      image: 'DanielaRodriguez.jpeg', focus: '50% 20%', zoom: 1,
     },
-    { name: 'Mauricio Cortes Cely', role: 'Cargo 3', image: 'Mauricio.jpeg', focus: '50% 12%', zoom: 1.8, bio: 'Biografía pendiente.' },
+    {
+      name: 'Mauricio Cortés',
+      role: 'Gerente de Iniciativas Estratégicas y Crecimiento',
+      position: 'Gerente de Iniciativas Estratégicas y Crecimiento.',
+      areas: 'Iniciativas estratégicas y crecimiento.',
+      contact: 'ma.cortes140@uniandes.edu.co',
+      bio: 'Gerente de Iniciativas Estratégicas y Crecimiento del Observatorio de Salud Pública y Epidemiología Dr. José Félix Patiño de la Universidad de los Andes.',
+      image: 'Mauricio.jpeg', focus: '50% 12%', zoom: 1.8,
+    },
     {
       name: 'Valentina Gómez Serrano',
       role: 'Médica investigadora',
@@ -122,7 +130,7 @@ export const team = {
       education: 'Médica.',
       areas: 'Salud pública, investigación en salud, salud mental, salud materno-perinatal, prevención de infecciones de transmisión sexual, acceso a servicios de salud, investigación en poblaciones vulnerables, vacunación a lo largo de la vida.',
       bio: 'Médica investigadora con trabajo en bioética y Salud Pública, orientado a la generación y traducción de evidencia para la toma de decisiones. Participa en la formulación de proyectos, elaboración de documentos técnicos y recomendaciones de política, y desarrollo de diálogos con actores públicos, privados y sociedades científicas. Integra el análisis ético de las decisiones en salud, con énfasis en equidad, acceso a intervenciones y protección de poblaciones en condiciones de vulnerabilidad. Su trabajo conecta investigación, política y práctica para fortalecer la prevención y la vacunación a lo largo de la vida.',
-      image: 'valentina.jpeg', focus: '50% 30%', zoom: 1,
+      image: 'valentina.jpeg', focus: '50% 20%', zoom: 1,
     },
     {
       name: 'Rodrigo Rodríguez Fernández',

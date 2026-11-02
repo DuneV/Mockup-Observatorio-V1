@@ -116,6 +116,11 @@ export default function Team() {
                   <p className="team-modal__text">{activeMember.areas}</p>
                 </>
               )}
+              {activeMember.contact && (
+                <p className="team-modal__text">
+                  <a href={`mailto:${activeMember.contact}`}>{activeMember.contact}</a>
+                </p>
+              )}
               <p className="team-modal__bio">{activeMember.bio}</p>
             </div>
           </div>
