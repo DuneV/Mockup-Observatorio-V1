@@ -157,6 +157,7 @@ export const team = {
       education: 'Magíster en Salud Pública, con orientación en Sistemas Municipales de Salud, de la Universidad Nacional de La Plata, Argentina. Cuenta también con formación de posgrado en epidemiología.',
       areas: 'Salud pública, epidemiología, salud global, inmunizaciones, evaluación de programas de vacunación, políticas de inmunización, investigación epidemiológica, enfermedades transmisibles y no transmisibles y educación médica continua.',
       bio: 'Profesional de salud pública e investigadora con experiencia en epidemiología, inmunizaciones y salud global. Se encuentra vinculada al Consorcio de Salud Global de Florida International University (FIU), donde participa en investigaciones y proyectos relacionados con políticas de vacunación, evaluación de programas de inmunización y fortalecimiento de los sistemas de salud en América Latina y el Caribe. Ha participado en publicaciones científicas sobre el funcionamiento de los Grupos Técnicos Asesores Nacionales de Inmunización (NITAG), la vacunación contra el virus del papiloma humano (VPH) y las coberturas de vacunación contra influenza. Cuenta además con experiencia en promoción de la salud, prevención de enfermedades crónicas y desarrollo de programas de educación médica para profesionales de la salud.',
+      image: 'ruby-trejo.jpg', focus: '50% 30%', zoom: 1,
     },
     {
       name: 'Francisco Becerra Posada',
