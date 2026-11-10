@@ -1,11 +1,22 @@
 import { hero } from '../data/content'
 import heroBanner from '../assets/banner.jpg'
+import heroVideo from '../assets/hero-bg.mp4'
 import './Hero.css'
 
 export default function Hero() {
   return (
     <section id="inicio" className="hero">
-      <img className="hero__bg" src={heroBanner} alt="" aria-hidden="true" />
+      <video
+        className="hero__bg"
+        src={heroVideo}
+        poster={heroBanner}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        aria-hidden="true"
+      />
       <span className="hero__overlay" aria-hidden="true" />
 
       <div className="container hero__row">
@@ -23,27 +34,18 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero__panel" aria-hidden="true">
+        <div className="hero__panel">
           <div className="hero__panel-head">
-            <span className="hero__panel-label">Estado de cobertura</span>
+            <span className="hero__panel-label">{hero.panel.label}</span>
           </div>
           <ul className="hero__panel-list">
-            <li>
-              <span className="dot dot-green" />
-              Influenza: meta cumplida
-            </li>
-            <li>
-              <span className="dot dot-amber" />
-              Frontera: en seguimiento
-            </li>
-            <li>
-              <span className="dot dot-red" />
-              Virus respiratorios: alerta
-            </li>
+            {hero.panel.items.map((item) => (
+              <li key={item}>
+                <span className="dot" aria-hidden="true" />
+                {item}
+              </li>
+            ))}
           </ul>
-          <div className="hero__panel-foot">
-            Actualizado con datos del Ministerio de Salud y territorios
-          </div>
         </div>
       </div>
     </section>

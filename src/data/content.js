@@ -8,6 +8,14 @@ export const hero = {
   lead: 'Un espacio físico y virtual de seguimiento, monitoreo y evaluación de los principales procesos e indicadores de salud de Colombia y la región, para aportar desde la academia y la sociedad civil al control social y la gobernanza ciudadana en la toma de decisiones de política pública en salud.',
   ctaPrimary: { label: 'Ver visor de indicadores', href: '#visor' },
   ctaSecondary: { label: 'Últimos boletines', href: '#boletines' },
+  panel: {
+    label: 'Qué analizamos',
+    items: [
+      'Circulación viral',
+      'Coberturas de vacunación a lo largo de la vida',
+      'Coberturas de biológicos del PAI',
+    ],
+  },
 }
 
 export const about = {
@@ -158,6 +166,15 @@ export const team = {
       areas: 'Salud pública, epidemiología, salud global, inmunizaciones, evaluación de programas de vacunación, políticas de inmunización, investigación epidemiológica, enfermedades transmisibles y no transmisibles y educación médica continua.',
       bio: 'Profesional de salud pública e investigadora con experiencia en epidemiología, inmunizaciones y salud global. Se encuentra vinculada al Consorcio de Salud Global de Florida International University (FIU), donde participa en investigaciones y proyectos relacionados con políticas de vacunación, evaluación de programas de inmunización y fortalecimiento de los sistemas de salud en América Latina y el Caribe. Ha participado en publicaciones científicas sobre el funcionamiento de los Grupos Técnicos Asesores Nacionales de Inmunización (NITAG), la vacunación contra el virus del papiloma humano (VPH) y las coberturas de vacunación contra influenza. Cuenta además con experiencia en promoción de la salud, prevención de enfermedades crónicas y desarrollo de programas de educación médica para profesionales de la salud.',
       image: 'ruby-trejo.jpg', focus: '50% 30%', zoom: 1,
+    },
+    {
+      name: 'Laura C. Baracaldo',
+      role: 'Profesional en salud pública y coordinación de proyectos',
+      position: 'Profesional en salud pública y coordinación de proyectos técnico-científicos, vinculada al Observatorio de Salud Pública y Epidemiología Dr. José Félix Patiño de la Facultad de Medicina y Ciencias de la Salud de la Universidad de los Andes.',
+      education: 'Médica, con formación de maestría en Salud Global y Desarrollo de University College London (UCL), Reino Unido.',
+      areas: 'Salud pública, salud global, epidemiología, inmunizaciones, sistemas de salud, análisis de políticas públicas, investigación en salud, cooperación internacional, evaluación de intervenciones y gestión de proyectos técnico-científicos.',
+      bio: 'Médica con formación de posgrado en Salud Global y Desarrollo de University College London (UCL), con experiencia en investigación, gestión y coordinación de proyectos en salud pública y cooperación internacional. Actualmente se encuentra vinculada al Observatorio de Salud Pública y Epidemiología Dr. José Félix Patiño de la Universidad de los Andes, donde participa en iniciativas orientadas al fortalecimiento de las políticas públicas de salud, los programas de inmunización y la generación de evidencia científica para la toma de decisiones. Su trayectoria incluye actividades relacionadas con salud global, evaluación de intervenciones, sistemas de salud y análisis de políticas sanitarias, con énfasis en el fortalecimiento de capacidades institucionales y la reducción de inequidades en salud.',
+      image: 'laura-baracaldo.jpg', focus: '50% 30%', zoom: 1,
     },
     {
       name: 'Francisco Becerra Posada',
